@@ -2,18 +2,12 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import torchvision
-import torchvision.tranforms as tranforms
+import torchvision.transforms as tranforms
 import torch.optim as optim
 import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
 
-filter_sizes = [1024, 512, 256, 128]
-lr = 0.0002
-beta = [0.5, 0.999]
-batch_size = 32
-num_epochs = 5
-z_dim = 100
 
 class Generator(nn.Module):
 
