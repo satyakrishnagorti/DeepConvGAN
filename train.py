@@ -160,7 +160,7 @@ for epoch in range(num_epochs):
 
 
         if (i%10 == 0):
-            print('Epoch [%d/%d], Step [%d/%d], D_loss: %.4f, G_loss: %.4f' % (epoch+1, num_epochs, i+1, len(data_loader), D_loss.data[0], G_loss.data[0]))
+            print('Epoch [%d/%d], Step [%d/%d], D_loss: %.4f, G_loss: %.4f' % (epoch+1, num_epochs, i+1, len(data_loader)), D_loss.data[0], G_loss.data[0]))
     
     D_avg_loss = torch.mean(torch.FloatTensor(D_losses))
     G_avg_loss = torch.mean(torch.FloatTensor(G_losses))
